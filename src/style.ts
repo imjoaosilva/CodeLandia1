@@ -93,7 +93,7 @@ export const Content = styled.div`
     display:flex;
     gap: 50px;
     flex-direction: column;
-
+    padding-bottom: 50px;
     width: 900px;
     margin: 0 auto;
 
@@ -101,7 +101,16 @@ export const Content = styled.div`
         width: 80%;
     }
 
-    padding-bottom: 50px;
+    svg {
+        transition: all 0.2s;
+        
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            opacity: 0.5;
+        }
+    }
+
 `
 
 export const Post = styled.div`
